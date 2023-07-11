@@ -5,7 +5,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Login"
         tools:targetApi="31">
+        <activity
+            android:name=".TampilMahasiswaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TambahMahasiswaActivity"
+            android:exported="false" />
         <activity
             android:name=".MenuActivity"
             android:exported="false" />
@@ -26,7 +31,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

@@ -7,21 +7,15 @@
     tools:context=".MenuActivity"
     android:columnCount="1"
     android:background="@drawable/gradient_a">
+
     <Button
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:layout_columnWeight="1"
         android:background="@android:color/transparent"
-        android:drawableRight="@drawable/img_teenagers_128"
-        android:textColor="#fff"
-        android:text="Master Pemakai"></Button>
-    <Button
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
         android:layout_columnWeight="1"
-        android:background="@android:color/transparent"
         android:textColor="#fff"
         android:drawableLeft="@drawable/student"
-        android:text="Master Mahasiswa" />
+        android:text="Master Mahasiswa"
+        android:id="@+id/inputMahasiswa"></Button>
 
 </GridLayout>
