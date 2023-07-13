@@ -32,11 +32,25 @@ public class MenuActivity extends AppCompatActivity {
 
         initTampilMahasiswaButton();
         initTampilForexButton();
+        initTampilCuacaButton();
     }
 
 
 
 
+
+    private void initTampilCuacaButton()
+    {
+        _tampilCuacaButton = findViewById(R.id.tampilCuacaButton);
+
+        _tampilCuacaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                _tampilCuacaIntent = new Intent(getApplicationContext(), CuacaMainActivity.class);
+                startActivity(_tampilCuacaIntent);
+            }
+        });
+    }
 
     private void initTampilForexButton()
     {

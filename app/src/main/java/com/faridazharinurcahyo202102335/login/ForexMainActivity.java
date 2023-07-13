@@ -59,7 +59,7 @@ public class ForexMainActivity extends AppCompatActivity {
     private void initForex() {
         loadingProgressBar.setVisibility(TextView.VISIBLE);
 
-        String url = "https://openexchangerates.org/api/latest.json?app_id=fae856e4d8a14d1590672fbde52dd930";
+        String url = "https://openexchangerates.org/api/latest.json?app_id=604585ac1ce94f0a95d1120274d7f8bd";
 
         AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
         asyncHttpClient.get(url, new AsyncHttpResponseHandler() {

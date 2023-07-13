@@ -26,4 +26,13 @@
         android:textColor="#fff"
         android:text="Forex"
         android:id="@+id/tampilForexButton"></Button>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_columnWeight="1"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/img_weather_lightning_128"
+        android:text="Cuaca"
+        android:id="@+id/tampilCuacaButton"></Button>
 </GridLayout>
