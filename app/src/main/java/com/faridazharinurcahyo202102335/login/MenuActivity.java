@@ -31,12 +31,27 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         initTampilMahasiswaButton();
-
+        initTampilForexButton();
     }
 
 
 
 
+
+    private void initTampilForexButton()
+    {
+        _tampilForexButton = (Button) findViewById(R.id.tampilForexButton);
+
+        _tampilForexButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                _tampilForexIntent = new Intent(getApplicationContext(), ForexMainActivity.class);
+                startActivity(_tampilForexIntent);
+
+            }
+        });
+    }
 
     private void initTampilMahasiswaButton() {
         _tampilMahasiswaButton = findViewById(R.id.inputMahasiswa);
@@ -55,4 +70,3 @@ public class MenuActivity extends AppCompatActivity {
     }
 
 }
-
